@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <!-- Cargar TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    
+  </head>
+  <body>
+    <div id="console"></div>
+    
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <button id="class-a">Clase A</button>
+    <button id="class-b">Clase B</button>
+    <button id="predict">Predecir</button>
+    <!-- Cargar index.js luego del contenido de la página -->
+    <script src="index.js"></script>
+  </body>
+</html>
